@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search App</title>
+    <!-- Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Materialize Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="light-mode">
+    <div class="container">
+      <h1 class="center-align neon-red spooky-font">Movie Search App</h1>
+      <div class="input-field">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search for movies..."
+        />
+        <label for="searchInput">Search</label>
+        <button class="btn waves-effect waves-light" id="searchButton">
+          <i class="material-icons left">search</i> Search
+        </button>
+      </div>
+      <div class="switch">
+        <label>
+          Light
+          <input type="checkbox" id="toggleMode" />
+          <span class="lever"></span>
+          Dark
+        </label>
+      </div>
+      <div id="movieList" class="row">
+        <!-- Movie cards will be dynamically added here -->
+      </div>
+      <footer class="center-align">
+        <a href="https://youtube.com/@code-with-Bharadwaj" target="_blank">
+          Movie Search App by Bharadwaj
+        </a>
+      </footer>
+    </div>
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+  </body>
+</html>
